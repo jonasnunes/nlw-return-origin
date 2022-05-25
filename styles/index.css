@@ -1,0 +1,49 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 37.5rem;
+    margin: 4.1rem auto 0;
+    padding: 0 2rem;
+}
+
+h4{
+    font-size: 1.4rem;
+    color: var(--brand-green);
+    margin-bottom: 1.6rem;
+}
+
+h1{
+    font-size: 3.4rem;
+    color: var(--gray-headline);
+    line-height: 130%;
+    margin-bottom: 2.4rem;
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: var(--gray-paragraph);
+    margin-bottom: 3.2rem;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    margin-bottom: 6rem;
+    height: 6.2rem;
+    width: 26.3rem;
+    padding: 1rem;
+    background-color: var(--brand-green);
+    border-radius: 4rem;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
