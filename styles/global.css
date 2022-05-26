@@ -24,6 +24,8 @@
     /* Fonts */
     --font: 'DM Sans', sans-serif;
     font-size: 62.5%;
+
+    --nav-height: 7.2rem;
 }
 
 body{
