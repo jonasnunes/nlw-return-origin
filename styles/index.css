@@ -1,3 +1,21 @@
+/*=== NAVIGATION ===*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+    position: fixed;
+    top: 0;
+}
+
+.wrapper{
+    width: 37.5rem;
+    margin-inline: auto;
+}
+
+/*=== HEADER ===*/
+
 header{
     display: flex;
     flex-direction: column;
@@ -5,9 +23,7 @@ header{
     align-items: center;
     text-align: center;
 
-    width: 37.5rem;
-    margin: 4.1rem auto 0;
-    padding: 0 2rem;
+    margin-top: 4.1rem;
 }
 
 header::before{
@@ -21,6 +37,8 @@ header::before{
     left: 0;
     z-index: -1;
 }
+
+
 
 h4{
     font-size: 1.4rem;
