@@ -52,7 +52,7 @@ header{
 
 header::before{
     content: "";
-    width: 100vw;
+    width: 100%;
     height: calc(108rem + var(--nav-height));
     background-color: var(--brand-green-light);
     display: block;
@@ -88,7 +88,7 @@ p{
     margin-bottom: 3.2rem;
 }
 
-button{
+button.botao{
     display: flex;
     justify-content: center;
     align-items: center;
