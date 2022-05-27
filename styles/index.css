@@ -1,7 +1,7 @@
 /*=== NAVIGATION ===*/
 
 nav{
-    display: grid;
+    display: flex;
 
     position: fixed;
     top: 0;
@@ -33,16 +33,25 @@ nav.scroll svg:nth-child(1) path{
     fill: white;
 }
 
-nav.scroll svg:nth-child(2) path{
+nav.scroll button path{
     stroke: white;
+}
+
+nav button{
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 /*=== MENU EXPANDED ===*/
 
 body.menu-expanded{
-    overflow: hidden;
-    
+    overflow: hidden; 
     text-align: center;
+}
+
+body.menu-expanded > :not(nav){
+    display: none;
 }
 
 .menu,
@@ -66,10 +75,26 @@ body.menu-expanded .menu{
 
     width: 100vw;
     height: 100vh;
+
+    padding-top: var(--nav-height);
 }
 
 body.menu-expanded nav{
     position: relative;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded nav button{
+    position: relative;
+    z-index: 1;
+}
+
+body.menu-expanded .logo path{
+    fill: white;
+}
+
+body.menu-expanded button path{
+    stroke: white;
 }
 
 .menu ul:nth-child(1) li a{
