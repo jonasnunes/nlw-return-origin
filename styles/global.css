@@ -38,4 +38,9 @@ body{
 body{
     font-family: var(--font);
     font-size: 1.6rem;
+    background-color: var(--brand-green-light-02);
+}
+
+section{
+    padding-block: 10rem;
 }
