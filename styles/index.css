@@ -67,6 +67,10 @@ body.menu-expanded .close-menu{
     visibility: visible;
 }
 
+.menu{
+    transform: translateY(100%);
+}
+
 body.menu-expanded .menu{
     position: fixed;
     top: 0;
@@ -77,6 +81,9 @@ body.menu-expanded .menu{
     height: 100vh;
 
     padding-top: var(--nav-height);
+
+    transition: transform 300ms;
+    transform: translateY(0);
 }
 
 body.menu-expanded nav{
@@ -130,7 +137,7 @@ body.menu-expanded button path{
     gap: 3.2rem;
 }
 
-/*=== HEADER ===*/
+/*=== #HOME ===*/
 
 header{
     display: flex;
@@ -139,10 +146,10 @@ header{
     align-items: center;
     text-align: center;
 
-    margin-top: calc(4.1rem + var(--nav-height));
+    padding-top: calc(4.1rem + var(--nav-height));
 }
 
-header::before{
+#home::before{
     content: "";
     width: 100%;
     height: calc(108rem + var(--nav-height));
@@ -160,27 +167,27 @@ header::before{
     padding-inline: 2.4rem;
 }
 
-h4{
+#home h4{
     font-size: 1.4rem;
     color: var(--brand-green);
     margin-bottom: 1.6rem;
 }
 
-h1{
+#home h1{
     font-size: 3.4rem;
     color: var(--gray-headline);
     line-height: 130%;
     margin-bottom: 2.4rem;
 }
 
-p{
+#home p{
     font-size: 1.8rem;
     line-height: 150%;
     color: var(--gray-paragraph);
     margin-bottom: 3.2rem;
 }
 
-button.botao{
+#home button.botao{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,7 +205,7 @@ button.botao{
     cursor: pointer;
 }
 
-.stats{
+#home .stats{
     width: 32.7rem;
     padding-block: 4rem;
     margin-inline: auto;
@@ -215,14 +222,14 @@ button.botao{
     border-radius: .6rem;
 }
 
-.stat h3{
+#home .stat h3{
     font-size: 4.8rem;
     color: var(--gray-headline);
     line-height: 130%;
     margin-bottom: .4rem;
 }
 
-.stat p{
+#home .stat p{
     margin: 0;
     color: var(--brand-green);
     font-size: 1.6rem;
@@ -258,8 +265,8 @@ button.botao{
     background-color: #fff;
     border: 1px solid var(--brand-green-light);
     border-radius: .6rem;
-}
 
-.card h3{
-    margin-block: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
 }
